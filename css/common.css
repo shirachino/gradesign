@@ -1,0 +1,17 @@
+.w{
+	width: 1500px;
+	margin: 0 auto;
+}
+.top{
+	height: 120px;
+	background-color: #ffffff;
+}
+.top_logo{
+	float: left;
+	width: 300px;
+	height: 120px;
+}
+.top_logo a img{
+	height: 80px;
+	margin: 20px 0 0 50px;
+}
