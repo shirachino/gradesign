@@ -1,22 +1,4 @@
-.top_mod{
-	float: right;
-	height: 120px;
-}
-.top_mod ul li{
-	float: left;
-	height: 120px;
-	overflow: hidden;
-}
-.top_mod ul li a{
-	
-	padding: 60px;
-	line-height: 120px;
-	font-size: 25px;
-}
-.top_mod ul li a:hover{
-	color: white;
-	background-color: skyblue;
-}
+
 .banner{
 	margin-top: 20px;
 	height: 600px;
@@ -24,6 +6,7 @@
 .banner_one{
 	position: relative;
 	margin-top: 20px;
+	color: #3992ff;
 }
 .banner_one img{
 	position: absolute;
@@ -47,10 +30,12 @@
 .info_one h2{
 	margin: 20px 50px;
 	font-size: 40px;
+	color: #77b4ff;
 }
 .info_one p{
 	margin: 20px 100px;
 	font-size: 24px;
+	color: #87b7ff;
 }
 .info_one a{
 	display: block;
@@ -65,6 +50,11 @@
 	text-align: center;
 	line-height: 55px;
 	color: white;
+	transition: all 0.5s;
+}
+.info_one a:hover{
+	box-shadow: 0 0 10px #66B2FF;
+	transform: scale(1.1);
 }
 .footer{
 	position: relative;

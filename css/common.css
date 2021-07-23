@@ -15,3 +15,21 @@
 	height: 80px;
 	margin: 20px 0 0 50px;
 }
+.top_mod{
+	float: right;
+	height: 120px;
+}
+.top_mod ul li{
+	float: left;
+	height: 120px;
+	overflow: hidden;
+}
+.top_mod ul li a{
+	padding: 60px;
+	line-height: 120px;
+	font-size: 18px;
+}
+.top_mod ul li a:hover{
+	color: white;
+	background-color: skyblue;
+}

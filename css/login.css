@@ -1,0 +1,85 @@
+.rtop{
+	height: 120px;
+	background-color: white;
+}
+.top_mod ul li a{
+	font-size: 16px;
+}
+.loginarea{
+	position: relative;
+	height: 662px;
+}
+.ad_box{
+	position: absolute;
+	width: 640px;
+	height: 650px;
+}
+.login_box{
+	position: absolute;
+	top: 105px;
+	right: 170px;
+	width: 440px;
+	height: 450px;
+	background-color: white;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #666666;
+}
+.login_box h3{
+	height: 40px;
+	background-color: #e6e6e6;
+	border-radius: 3px 3px 0 0;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+	color: black;
+}
+.login_form{
+	width: 340px;
+	margin: 50px 0 0 42px;
+}
+.login_form ul li{
+	margin-bottom: 40px;
+}
+.login_form ul li label{
+	display: inline-block;
+	width: 88px;
+	font-size: 16px;
+	text-align: right;
+}
+.login_form ul li:nth-child(-n+2) input{
+	width: 242px;
+	height: 37px;
+	padding-left: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	outline: none;
+}
+.login_form ul li:nth-child(-n+2) input:focus{
+	border: 1px solid darkblue;
+}
+.login_form a{
+	color: #66b2ff;
+}
+.login_form input[type^=checkbox]{
+	margin-left: 90px;
+	vertical-align: middle;
+}
+.login_form input[type^=submit]{
+	width: 242px;
+	height: 37px;
+	margin-left: 60px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	background-color: #87CEEB;
+	color: white;
+	cursor: pointer;
+}
+.footer{
+	height: 155px;
+	background-color: white;
+}
+.copyright{
+	width: 450px;
+	padding-top: 75px;
+}
