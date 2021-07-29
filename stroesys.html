@@ -39,10 +39,26 @@
 			<div class="top_logo">
 				<a href=""><img src="img/logo2.png" ></a>
 			</div>
-			<div class="user_info">
+			<div class="time">
 				<div id="now_time">
 					<p></p>
 				</div>
+			</div>
+			<div class="user">
+				<div class="profile">
+					<img src="img/user_head.jpg" alt="">
+					<span>username_test</span>
+					<span id="user_state">在线</span>
+					<span id="user_vip" >VIP</span>
+				</div>
+				<span class="set">
+				<ul class="user_set">
+					<li>修改账户信息</li>
+					<li>修改密码</li>
+					<li>开通VIP</li>
+					<li>退出登录</li>
+				</ul>
+				
 			</div>
 		</div>
 		<!-- 头部logo和用户/ -->
@@ -118,11 +134,15 @@
 			getDate();//打开页面执行获取时间
 			setInterval("getDate()",1000);//每一秒执行一次获取时间函数
 			
-			// var goto_goods = document.getElementById('goods');
-			// var ifr = document.querySelector('iframe');
-			// goto_goods.onclick = function(){
-			// 	ifr.src = 'goods.html';
-			// }
+			// 用户设置下拉菜单
+			var seticon = document.querySelector('.set');
+			var set_ul = document.querySelector('.user_set');
+			seticon.onmouseover = function(){
+				set_ul.style.display = 'block';
+			}
+			set_ul.onmouseout = function(){
+				set_ul.style.display = 'none';
+			}
 		</script>
 		
 	</body>

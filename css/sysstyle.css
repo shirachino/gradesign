@@ -1,13 +1,13 @@
 /* 首页 */
 .box{
 	width: 1200px;
-	height: 240px;
+	height: 220px;
 	margin: 20px 0 0 50px;
 }
 .box h2{
 	padding: 0 10px 10px;
-	border-bottom: 2px solid #aaaaaa;
-	color: #ffffff;
+	border-bottom: 3px dotted #aaaaaa;
+	color: #8f3b3d;
 }
 .today_sale h2::before{
 	content: '\e82d';
@@ -20,15 +20,15 @@
 	margin-right: 70px;
 	width: 300px;
 	height: 120px;
-	border: 1px solid transparent;
 	border-radius: 5px;
-	box-shadow: 5px 5px 10px #717171;
+	box-shadow: 5px 5px 10px #c3c3c3;
 	transition: margin-top .3s;
 }
 .tod_tag:hover{
-	margin-top: 12px;
+	margin-top: 10px;
 }
 .tod_tag h6{
+	margin-top: 10px;
 	margin-left: 20px;
 	font-size: 20px;
 	color: white;
@@ -46,24 +46,64 @@
 	font-family: STHupo;
 }
 .customer{
-	background-color: #f5a15b;
+	background:linear-gradient(to right bottom,rgba(255, 179, 71, 1),rgba(222, 222, 222, 0.8));
 }
 .customer i{
-	color: #ff787a;
+	color: #ffffff;
 }
 .sales{
-	background-color: #bc9ccb;
+	background:linear-gradient(to right bottom,rgba(203, 63, 65, 1),rgba(222, 222, 222, 0.8));
 }
 .sales i{
-	color: #a1ffcd;
+	
+	color: #ffffff;
 }
 .saletop{
-	background-color: #f5aeaf;
+	background:linear-gradient(to right bottom,rgba(57, 135, 75, 1),rgba(222, 222, 222, 0.8));
 }
 .saletop i{
-	color: #ff7b86;
+	color: #ffffff;
 }
 .fastmod h2::before{
 	content: '\e8a7';
 	font-family: Linearicons-Free;	margin-right: 10px;
+}
+.fastmod p{
+	margin: 12px 0;
+	font-size: 14px;
+	color: #666;
+}
+.fastmod a{
+	display: inline-block;
+	margin-right: 30px;
+	width: 140px;
+	height: 50px;
+	border-radius: 5px;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+}
+.mod_one{
+	background-color: #008000;
+}
+.mod_one::after{
+	content: '\e867';
+	font-family: Linearicons-Free;
+		font-size: 18px;
+	font-weight: 600;
+}
+.mod_two{
+	background-color: #1287a1;
+}
+.mod_two::after{
+	content: '\e86f';
+	font-family: Linearicons-Free;
+	font-size: 16px;
+	font-weight: 600;
+}
+.othermod h2::before{
+	content: '\e88e';
+	font-family: Linearicons-Free;
+	margin-right: 10px;
 }
