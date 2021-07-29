@@ -45,9 +45,10 @@ details[open]{
 	background-color: #002d47;
 }
 details ul li{
-	height: 35px;
-	line-height: 35px;
+	height: 40px;
+	line-height: 40px;
 	padding-left: 50px;
+	font-size: 14px;
 	background-color: #003f61;
 }
 details ul li a{
@@ -93,4 +94,11 @@ iframe{
 	iframe{
 		width: calc(2114px - 300px);
 	}
+}
+.footer{
+	float: left;
+	height: 143px;
+	width: 1603px;
+	text-align: center;
+	line-height: 143px;
 }
