@@ -1,4 +1,17 @@
-
+.top_mod ul .menu li{
+	position: relative;
+	float: none;
+	height: 40px;
+	width: 156px;
+	text-align: center;
+	padding: 10px ;
+	background-color: #f3f3f3;
+	box-shadow: 0 5px 10px rgba(0,0,0, .2);
+	z-index: 999;
+}
+.menu{
+	display: none;
+}
 .banner{
 	margin-top: 20px;
 	height: 600px;

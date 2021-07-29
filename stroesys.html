@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="聊城大学 计算机学院 电子商务">
+		<meta name="keywords" content="系统,商品,毕设,商店管理" />
+		<title>店铺管家-店铺管理系统</title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/stroesys.css"/>
+		<link rel="shortcut icon" href="icon_logo.ico" />
+		<style type="text/css">
+			@font-face {
+				font-family: 'Linearicons-Free';
+				src: url('fonts/Linearicons-Free.eot?pbf4y');
+				src: url('fonts/Linearicons-Free.eot?pbf4y#iefix') format('embedded-opentype'),
+					url('fonts/Linearicons-Free.ttf?pbf4y') format('truetype'),
+					url('fonts/Linearicons-Free.woff?pbf4y') format('woff'),
+					url('fonts/Linearicons-Free.svg?pbf4y#Linearicons-Free') format('svg');
+				font-weight: normal;
+				font-style: normal;
+				font-display: block;
+			}
+		</style>
+		<script type="text/javascript">   
+				 function SetIFrameHeight(){
+				  	  var iframeid=document.getElementById("iframe"); //iframe id
+				  	  if (document.getElementById){
+				  		iframeid.height =document.documentElement.clientHeight;			   	   
+					  }
+				 }
+		    
+			</script>
+	</head>
+	<body>
+		<!-- 头部logo和用户 -->
+		<div class="top">
+			<div class="top_logo">
+				<a href=""><img src="img/logo2.png" ></a>
+			</div>
+			<div class="user_info">
+				<div id="now_time">
+					<p></p>
+				</div>
+			</div>
+		</div>
+		<!-- 头部logo和用户/ -->
+		<!-- 侧边导航栏 -->
+		<div class="nav">
+			<div class="nav_title">
+				菜单	
+			</div>
+			<details>
+				<summary>店铺信息</summary>
+				<ul>
+					<li><a href="sys_index.html" target="iframe">店铺首页</a></li>
+					<li><a href="sys_goods.html" target="iframe">商品信息</a></li>
+					<li>info3</li>
+				</ul>
+			</details>
+			<details>
+				<summary>销售信息</summary>
+				<ul>
+					<li>info1</li>
+					<li>info2</li>
+					<li>info3</li>
+				</ul>
+			</details>
+			<details>
+				<summary>统计分析</summary>
+				<ul>
+					<li>info1</li>
+					<li>info2</li>
+					<li>info3</li>
+				</ul>
+			</details>
+		</div>
+		<!-- 侧边导航栏/ -->
+		
+		<!-- 嵌入页面 -->
+		<iframe src="sys_index.html" height="820px" id="iframe" name="iframe" onload="SetIFrameHeight()"></iframe>
+		<!-- 嵌入页面/ -->
+		
+		<!-- JavaScript -->
+		<script>
+			// 显示系统时间
+			function getDate(){
+				var time_box = document.getElementById('now_time').children[0];
+				var date = new Date();
+				var h = date.getHours();
+				h = h < 10 ? '0' + h : h;
+				var m = date.getMinutes();
+				m = m < 10 ? '0' + m : m;
+				var s = date.getSeconds();
+				s = s < 10 ? '0' + s : s;
+				var d = date.getDay();
+				var week = ['星期天','星期一','星期二','星期三','星期四','星期五','星期六'];
+				if(date.getHours() < 6){
+					time_box.innerHTML = '门迎晓日财源广，现在是凌晨'+ h + ':'+ m + ':' + s +' '+ week[d];
+				}else if(date.getHours() < 12){
+					time_box.innerHTML = '生意兴隆通四海，现在是上午'+ h + ':'+ m + ':' + s +' '+ week[d];
+				}else if(date.getHours() < 18){
+					time_box.innerHTML = '财源茂盛达三江，现在是下午'+ h + ':'+ m + ':' + s +' '+ week[d];
+				}else{
+					time_box.innerHTML = '十分生意稳如山，现在是晚上'+ h + ':'+ m + ':' + s +' '+ week[d];
+				}
+			}
+			getDate();//打开页面执行获取时间
+			setInterval("getDate()",1000);//每一秒执行一次获取时间函数
+			
+			// var goto_goods = document.getElementById('goods');
+			// var ifr = document.querySelector('iframe');
+			// goto_goods.onclick = function(){
+			// 	ifr.src = 'goods.html';
+			// }
+		</script>
+		
+	</body>
+</html>

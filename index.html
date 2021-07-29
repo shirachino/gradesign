@@ -6,8 +6,9 @@
 		<meta name="keywords" content="系统,商品,毕设,商店管理" />
 		<title>店铺管家-小型商店商品管理系统-简洁、简约、简便但不简单</title>
 		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 		<link rel="stylesheet" type="text/css" href="css/base.css"/>
-			<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<link rel="shortcut icon" href="icon_logo.ico" />
 		<style type="text/css">
@@ -32,15 +33,22 @@
 					<a href=""><img src="img/logo.png" alt="logo"></a>
 				</div>
 				<div class="top_mod">
-					<ul>
+					<ul id="top_nav">
 						<li><a href="login.html">登录</a></li>
 						<li><a href="register.html">注册</a></li>
 						<li><a href="#">会员</a></li>
-						<li><a href="#">关于</a></li>
+						<li>
+							<a href="#">关于</a>
+							<ul class="menu">
+								<li>使用说明</li>
+								<li>联系我们</li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</div>
 		</header>
+		<!-- 头部logo、导航/ -->
 		<!-- 主视觉图 -->
 		<div class="banner">
 			<div class="banner_one w">
@@ -54,6 +62,7 @@
 				
 			</div>
 		</div>
+		<!-- 主视觉图/ -->
 		<!-- 底部模块 -->
 		<footer class="footer">
 			<div class="mover">
@@ -64,5 +73,20 @@
 				Copyright © 聊城大学计算机学院2018级15班 张景浩 出品 &nbsp;备案号 鲁ICP-XXXXX
 			</div>
 		</footer>
+		<!-- 底部模块/ -->
+		
+		<!-- javascript -->
+		<script type="text/javascript">
+			<!-- 下拉菜单 -->
+			var top_li = document.getElementById('top_nav');
+			var menu = document.querySelector('.menu');
+			top_li.children[3].onmouseover = function(){
+				menu.style.display = 'block';
+			}
+			top_li.children[3].onmouseout = function(){
+				menu.style.display = 'none';
+			}
+			<!-- 下拉菜单/ -->
+		</script>
 	</body>
 </html>

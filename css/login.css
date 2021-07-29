@@ -20,19 +20,20 @@
 	right: 170px;
 	width: 440px;
 	height: 450px;
-	background-color: white;
 	border: 1px solid #ccc;
 	border-radius: 5px;
-	box-shadow: 0 0 10px #666666;
+	background: linear-gradient(to right bottom,rgba(255,255,255, .5),rgba(255,255,255, .1));
+	backdrop-filter: blur(8px);
+	box-shadow: 5px 5px 10px rgba(0,0,0, .2);
 }
 .login_box h3{
 	height: 40px;
-	background-color: #e6e6e6;
+	background-color: rgba(0,0,0, .05);
 	border-radius: 3px 3px 0 0;
 	text-align: center;
 	line-height: 40px;
 	font-size: 18px;
-	color: black;
+	color: rgba(0,0,0, .6);
 }
 .login_form{
 	width: 340px;

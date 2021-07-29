@@ -22,12 +22,12 @@
 .top_mod ul li{
 	float: left;
 	height: 120px;
-	overflow: hidden;
 }
 .top_mod ul li a{
-	padding: 60px;
+	padding: 48px 60px;
 	line-height: 120px;
 	font-size: 18px;
+	transition: all .3s;
 }
 .top_mod ul li a:hover{
 	color: white;
