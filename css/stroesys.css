@@ -136,7 +136,7 @@ body{
 	width: 300px;
 	background-color: #002136;
 	color: white;
-	transition: width .5s;
+	transition:margin-left .5s;
 }
 .nav_title{
 	height: 50px;
@@ -210,7 +210,8 @@ iframe{
 }
 @media screen and (max-width:1080px) {
 	.nav{
-		width: 0;
-		transition: width .2s;
+		margin-left: -300px;
+		transition:margin-left .5s;
+		overflow: hidden;
 	}
 }
