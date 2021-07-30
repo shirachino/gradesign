@@ -89,6 +89,9 @@ body{
 	font-size: 8px;
 	color: white;
 }
+#user_vip a{
+	color: white;
+}
 .set::after{
 	content: '\e810';
 	position: absolute;
