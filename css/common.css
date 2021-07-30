@@ -33,9 +33,6 @@
 	color: white;
 	background-color: skyblue;
 }
-@media screen and (max-width: 980px) {
-	.w{
-		width: 980px;
-	}
-	
+@media screen and (max-width: 1340px){
+	.top{width: 1340px;}
 }

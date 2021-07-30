@@ -132,9 +132,9 @@
 		margin-top: 32px;
 	}
 }
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1340px) {
 	.w{
-		width: 980px;
+		width: 1080px;
 	}
 	.banner_one img{
 		position: absolute;
@@ -145,5 +145,8 @@
 	}
 	.banner_one img:hover{
 		top: 150px;
+	}
+	.city{
+		width: 1340px;
 	}
 }
