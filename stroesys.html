@@ -30,14 +30,13 @@
 				  		iframeid.height =document.documentElement.clientHeight;			   	   
 					  }
 				 }
-		    
-			</script>
+		</script>
 	</head>
 	<body>
 		<!-- 头部logo和用户 -->
 		<div class="top">
 			<div class="top_logo">
-				<a href=""><img src="img/logo2.png" ></a>
+				<a href="index.html"><img src="img/logo2.png" ></a>
 			</div>
 			<div class="time">
 				<div id="now_time">
@@ -120,15 +119,18 @@
 				var s = date.getSeconds();
 				s = s < 10 ? '0' + s : s;
 				var d = date.getDay();
+				var n = date.getFullYear();
+				var y = date.getMonth() + 1;
+				var r = date.getDate();
 				var week = ['星期天','星期一','星期二','星期三','星期四','星期五','星期六'];
 				if(date.getHours() < 6){
-					time_box.innerHTML = '门迎晓日财源广，现在是凌晨'+ h + ':'+ m + ':' + s +' '+ week[d];
+					time_box.innerHTML = '门迎晓日财源广，现在是'+' '+ n + '年' + y + '月'+ r + '日' +' '+ '凌晨'+ h + ':'+ m + ':' + s +' '+ week[d];
 				}else if(date.getHours() < 12){
-					time_box.innerHTML = '生意兴隆通四海，现在是上午'+ h + ':'+ m + ':' + s +' '+ week[d];
+					time_box.innerHTML = '生意兴隆通四海，现在是'+' '+ n + '年' + y + '月'+ r + '日' +' '+ '上午'+ h + ':'+ m + ':' + s +' '+ week[d];
 				}else if(date.getHours() < 18){
-					time_box.innerHTML = '财源茂盛达三江，现在是下午'+ h + ':'+ m + ':' + s +' '+ week[d];
+					time_box.innerHTML = '财源茂盛达三江，现在是'+' '+ n + '年' + y + '月'+ r + '日' +' '+ '下午'+ h + ':'+ m + ':' + s +' '+ week[d];
 				}else{
-					time_box.innerHTML = '十分生意稳如山，现在是晚上'+ h + ':'+ m + ':' + s +' '+ week[d];
+					time_box.innerHTML = '十分生意稳如山，现在是'+' '+ n + '年' + y + '月'+ r + '日' +' '+ '晚上'+ h + ':'+ m + ':' + s +' '+ week[d];
 				}
 			}
 			getDate();//打开页面执行获取时间

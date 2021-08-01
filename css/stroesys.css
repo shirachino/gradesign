@@ -2,6 +2,7 @@ body{
 	width: 1903px;
 }
 .top{
+	width: 1903px;
 	background-color: #4386a2;
 }
 .top_logo{
@@ -12,7 +13,7 @@ body{
 }
 .time{
 	float: left;
-	width: 400px;
+	width: 600px;
 	height: 120px;
 }
 #now_time{
@@ -136,7 +137,7 @@ body{
 	width: 300px;
 	background-color: #002136;
 	color: white;
-	transition:margin-left .5s;
+	transition: width .5s;
 }
 .nav_title{
 	height: 50px;
@@ -209,9 +210,15 @@ iframe{
 	line-height: 143px;
 }
 @media screen and (max-width:1080px) {
+	body{
+		width: 1603px;
+	}
 	.nav{
 		margin-left: -300px;
-		transition:margin-left .5s;
+		transition: width .2s;
 		overflow: hidden;
+	}
+	.top{
+		width: 1603px;
 	}
 }

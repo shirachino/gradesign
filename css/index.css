@@ -71,7 +71,7 @@
 }
 .footer{
 	position: relative;
-	height: 197px;
+	height: 196px;
 }
 
 .city{
@@ -126,27 +126,4 @@
 	font-size: 12px;
 	color: #FFEEE5;
 	z-index: 999;
-}
-@media screen and (min-height: 969px) {
-	.footer{
-		margin-top: 32px;
-	}
-}
-@media screen and (max-width: 1340px) {
-	.w{
-		width: 1080px;
-	}
-	.banner_one img{
-		position: absolute;
-		top: 160px;
-		right: -10px;
-		width: 400px;
-		transition: all 0.3s;
-	}
-	.banner_one img:hover{
-		top: 150px;
-	}
-	.city{
-		width: 1340px;
-	}
 }

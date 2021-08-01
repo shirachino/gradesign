@@ -313,7 +313,7 @@ th {
 
 	.table-bordered td,
 	.table-bordered th {
-		border: 1px solid #ddd !important
+		border: 1px solid #ccc !important
 	}
 }
 
@@ -3055,7 +3055,7 @@ th {
 }
 
 .table-hover>tbody>tr:hover {
-	background-color: #f5f5f5
+	background-color: #eeffdd;
 }
 
 table col[class*=col-] {
@@ -7297,7 +7297,7 @@ button.close {
 	margin: 10px auto;
 	left: 0;
 	right: 0;
-	top: 20%
+	top: 10%
 }
 
 .modal-content {
