@@ -6,7 +6,7 @@ body{
 	background-color: #4386a2;
 }
 .top_logo{
-	background-color: #348ad0;
+	background-color: #4188b4;
 }
 .top_logo a img{
 	margin-left: 20px;
@@ -192,6 +192,7 @@ details ul li a:hover{
 iframe{
 	float: left;
 	width: 1603px;
+	height: 900px;
 	border: none;
 }
 @media screen and (min-width: 2115px) {

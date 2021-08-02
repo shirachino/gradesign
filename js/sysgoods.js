@@ -1,4 +1,4 @@
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
 	// 模态框淡入淡出
 	var btnadd = document.querySelector('.addbtn');
 	var addmodal = document.querySelector('.add');
@@ -6,21 +6,30 @@ window.addEventListener('load', function() {
 	var btnrev = document.querySelector('.revbtn');
 	var revmodal = document.querySelector('.rev');
 
+	var btnsold = document.querySelector('.soldbtn');
+	var soldmodal = document.querySelector('.sold');
+
 	var mask = document.querySelector('.mask');
 
 	var close = document.querySelectorAll('.close');
 	var btndef = document.querySelectorAll('.mydefbtn_default')
-	btnadd.addEventListener('click', function() {
+	btnadd.addEventListener('click', function () {
 		mask.style.display = 'block';
 		mask.style.opacity = 1;
 		addmodal.style.display = 'block';
 		addmodal.style.opacity = 1;
 	});
-	btnrev.addEventListener('click', function() {
+	btnrev.addEventListener('click', function () {
 		mask.style.display = 'block';
 		mask.style.opacity = 1;
 		revmodal.style.display = 'block';
 		revmodal.style.opacity = 1;
+	});
+	btnsold.addEventListener('click', function () {
+		mask.style.display = 'block';
+		mask.style.opacity = 1;
+		soldmodal.style.display = 'block';
+		soldmodal.style.opacity = 1;
 	});
 	// 关闭
 	close[0].addEventListener('click', clsadd);
@@ -28,7 +37,7 @@ window.addEventListener('load', function() {
 	function clsadd() {
 		mask.style.animation = 'fadeout .3s';
 		addmodal.style.animation = 'fadeout .3s';
-		setTimeout(function() {
+		setTimeout(function () {
 			mask.style.display = 'none';
 			addmodal.style.display = 'none';
 			mask.style.animation = 'fadein .7s';
@@ -37,13 +46,13 @@ window.addEventListener('load', function() {
 		mask.style.opacity = 0;
 		addmodal.style.opacity = 0;
 	}
-	
+
 	close[1].addEventListener('click', clsrev);
 	btndef[1].addEventListener('click', clsrev);
 	function clsrev() {
 		mask.style.animation = 'fadeout .3s';
 		revmodal.style.animation = 'fadeout .3s';
-		setTimeout(function() {
+		setTimeout(function () {
 			mask.style.display = 'none';
 			revmodal.style.display = 'none';
 			mask.style.animation = 'fadein .7s';
@@ -51,5 +60,20 @@ window.addEventListener('load', function() {
 		}, 300)
 		mask.style.opacity = 0;
 		revmodal.style.opacity = 0;
+	}
+
+	close[2].addEventListener('click', clssold);
+	btndef[2].addEventListener('click', clssold);
+	function clssold() {
+		mask.style.animation = 'fadeout .3s';
+		soldmodal.style.animation = 'fadeout .3s';
+		setTimeout(function () {
+			mask.style.display = 'none';
+			soldmodal.style.display = 'none';
+			mask.style.animation = 'fadein .7s';
+			soldmodal.style.animation = 'fadein .5s';
+		}, 300)
+		mask.style.opacity = 0;
+		soldmodal.style.opacity = 0;
 	}
 });

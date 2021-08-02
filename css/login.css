@@ -3,7 +3,10 @@
 	background-color: white;
 }
 .top_mod ul li a{
+	display: inline-block;
+	height: 120px;
 	font-size: 16px;
+	line-height: 24px;
 }
 .loginarea{
 	position: relative;
@@ -36,6 +39,7 @@
 	color: rgba(0,0,0, .6);
 }
 .login_form{
+	position: relative;
 	width: 340px;
 	margin: 50px 0 0 42px;
 }
@@ -43,22 +47,48 @@
 	margin-bottom: 40px;
 }
 .login_form ul li label{
-	display: inline-block;
-	width: 88px;
+	position: absolute;
+	pointer-events:none;
 	font-size: 16px;
-	text-align: right;
+}
+.login_form ul li .labelname{
+	top:8px;
+	left: 32px;
+	transition: all 0.3s;
+}
+.login_form ul li .labelpwd{
+	top:85px;
+	left: 32px;
+	transition: all 0.3s;
 }
 .login_form ul li:nth-child(-n+2) input{
-	width: 242px;
+	width: 300px;
 	height: 37px;
-	padding-left: 10px;
-	border: 1px solid #ccc;
-	border-radius: 5px;
+	margin-left: 30px;
+	padding-left: 5px;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	background-color: transparent;
 	outline: none;
 }
 .login_form ul li:nth-child(-n+2) input:focus{
-	border: 1px solid darkblue;
+	border-bottom: 1px solid #868686;
 }
+.login_form ul li:nth-child(-n+2) input:focus ~ .labelname,
+.login_form ul li:nth-child(-n+2) input:valid ~ .labelname{
+	top:-12px;
+	left: 34px;
+	font-size: 12px;
+	color: #1d80b1;
+}
+.login_form ul li:nth-child(-n+2) input:focus ~ .labelpwd,
+.login_form ul li:nth-child(-n+2) input:valid ~ .labelpwd{
+	top:68px;
+	left: 34px;
+	font-size: 12px;
+	color: #1d80b1;
+}
+
 .login_form a{
 	color: #66b2ff;
 }

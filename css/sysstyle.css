@@ -352,19 +352,19 @@ input[type^=text]:focus {
 	border-bottom: 3px dotted #8d8d8d;
 	color: #8f3b3d;
 }
-
 .top h2::before {
 	content: '\e82d';
 	font-family: Linearicons-Free;
 }
-
 .goodsmod {
 	width: 1503px;
 	margin: 20px 0;
 }
-
 .btn-primary {
 	font-size: 18px;
 	border-radius: 5px 5px 5px 5px;
 	vertical-align: bottom;
+}
+.sold{
+	height: 380px;
 }
