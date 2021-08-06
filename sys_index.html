@@ -7,8 +7,9 @@
 		<title>店铺管家系统首页</title>
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
 		<link rel="stylesheet" type="text/css" href="css/sysstyle.css" />
-		<script src="plug/jquery/jquery-2.2.3.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="plug/echarts/echarts.min.js"></script>
+		<script src="plug/jquery/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="plug/vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="plug/vue/vue-resource.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/sysindex.js" type="text/javascript" charset="utf-8"></script>
 		<style type="text/css">
 			@font-face {
@@ -52,7 +53,7 @@
 			<p class="sctt">常用功能</p>
 			<button class="btn mod_one">快速入库 </button>
 			<button class="btn mod_two">快捷查询 </button>
-			<button class="btn mod_thr">商品销售 </button>
+			<button class="btn mod_thr">便捷销售 </button>
 		</div>
 		<!-- 快速导航/ -->
 
@@ -114,10 +115,41 @@
 				</div>
 			</div>
 		</div>
-		<div class="mask"></div>
 		<!-- 快速入库模态框/ -->
+
+		<!-- 快速查询模态框 -->
+		<div class="fastsearch mydefmodal">
+			<button type="button" class="close"><span>&times;</span></button>
+			<div class="mydefmodal_main">
+				<div class="mydefmodal_header">
+					<h4 class="mydefmodal_title">快捷查询</h4>
+				</div>
+				<div class="mydefmodal_body">
+					<input type="text" class="sc_input" v-model="" placeholder="请输入商品名称、编号查询">
+					<button type="button" class="btn mydefbtn_primary">查询</button>
+				</div>
+			</div>
+		</div>
+		<!-- 快速查询模态框/ -->
+
+		<!-- 便捷销售模态框 -->
+		<div class="fastsold mydefmodal">
+			<button type="button" class="close"><span>&times;</span></button>
+			<div class="mydefmodal_main">
+				<div class="mydefmodal_header">
+					<h4 class="mydefmodal_title">便捷销售</h4>
+				</div>
+				<div class="mydefmodal_body">
+					<input type="text" class="sc_input" v-model="" placeholder="请输入商品编号">
+					<input type="text" class="sc_input" v-model="" placeholder="请输入销售数量">
+					<button type="button" class="btn mydefbtn_primary">销售</button>
+				</div>
+			</div>
+		</div>
+		<!-- 便捷销售模态框? -->
+		<div class="mask"></div>
 		<script type="text/javascript">
-			
+
 		</script>
 	</body>
 </html>

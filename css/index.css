@@ -5,8 +5,9 @@
 	width: 156px;
 	text-align: center;
 	padding: 10px ;
+	border: 1px solid #e2e2e2;
+	border-top: none;
 	background-color: #f3f3f3;
-	box-shadow: 0 5px 10px rgba(0,0,0, .2);
 	z-index: 999;
 }
 .menu{

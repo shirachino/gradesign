@@ -1,32 +1,42 @@
-window.addEventListener('load', function() {
+$(function() {
 	// 模态框淡入淡出
-	var mask = document.querySelector('.mask');
-	var modal = document.querySelector('.mydefmodal');
-	var close = document.querySelector('.close');
-	var btndef = document.querySelector('.mydefbtn_default')
-	
-	var btnone = document.querySelector('.mod_one');
-	var fastaddmodal = document.querySelector('.fastadd');
-	
-	btnone.addEventListener('click', function() {
-		mask.style.display = 'block';
-		mask.style.opacity = 1;
-		fastaddmodal.style.display = 'block';
-		fastaddmodal.style.opacity = 1;
-	})
-	// 关闭通用
-	close.addEventListener('click', cls);
-	btndef.addEventListener('click', cls);
-	function cls() {
-		mask.style.animation = 'fadeout .3s';
+	$('.mod_one').on('click',function() {
+		$('.mask').show();
+		$('.mask').css('opacity', 1);
+		$('.fastadd').show();
+		$('.fastadd').css('opacity', 1);
+	});
+	$('.mod_two').on('click',function() {
+		$('.mask').show();
+		$('.mask').css('opacity', 1);
+		$('.fastsearch').show();
+		$('.fastsearch').css('opacity', 1);
+	});
+	$('.mod_thr').on('click',function() {
+		$('.mask').show();
+		$('.mask').css('opacity', 1);
+		$('.fastsold').show();
+		$('.fastsold').css('opacity', 1);
+	});
+		// 调用关闭
+	$('.close').eq(0).on('click',() => { cls($('.fastadd').get(0)); });
+	$('.mydefbtn_default').eq(0).on('click',() => { cls($('.fastadd').get(0)); });
+	$('.close').eq(1).on('click',() => { cls($('.fastsearch').get(0)); });
+	$('.mydefbtn_default').eq(1).on('click',() => { cls($('.fastsearch').get(0)); });
+	$('.close').eq(2).on('click',() => { cls($('.fastsold').get(0)); });
+	$('.mydefbtn_default').eq(2).on('click',() => { cls($('.fastsold').get(0)); });
+		// 关闭函数
+	function cls(modal) {
+		$('.mask').css('animation','fadeout .3s');
 		modal.style.animation = 'fadeout .3s';
-		setTimeout(function() {
-			mask.style.display = 'none';
+		setTimeout(function () {
+			$('.mask').hide();
 			modal.style.display = 'none';
-			mask.style.animation = 'fadein .7s';
+			$('.mask').css('animation','fadein .7s');
 			modal.style.animation = 'fadein .5s';
 		}, 300)
-		mask.style.opacity = 0;
+		$('.mask').css('opacity', 0);
 		modal.style.opacity = 0;
 	}
+	// 模态框淡入淡出end
 });

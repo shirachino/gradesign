@@ -343,7 +343,17 @@ input[type^=text]:focus {
 #mem::-webkit-scrollbar {
 	display: none;
 }
-
+.fastsearch{
+	height: 200px;
+}
+.fastsearch input{
+	width: 400px;
+	margin: 0 30px;
+}
+.fastsearch input:focus{
+	outline: none;
+	box-shadow: 0 1px 3px #aaaaaa;
+}
 
 /* 商品管理 */
 .top h2 {

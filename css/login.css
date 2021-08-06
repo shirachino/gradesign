@@ -11,21 +11,53 @@
 .loginarea{
 	position: relative;
 	height: 662px;
+	width: 1550px;
+	margin: 0 auto;
 }
 .ad_box{
 	position: absolute;
-	width: 640px;
-	height: 650px;
+	top: 32px;
+	left: 60px;
+	width: 600px;
+	height: 600px;
+	overflow: hidden;
+}
+.ad_box ul{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2400px;
+}
+.ad_box ul li{
+	float: left;
+	width: 600px;
+	height: 600px;
+}
+
+.circle{
+	position: absolute;
+	top: 250px;
+	left: -140px;
+}
+.circle li{
+	width: 10px;
+	height: 10px;
+	margin-bottom: 20px;
+	border: 5px solid #77aeff;
+	border-radius: 50%;
+}
+.circle .current{
+	border: 5px solid #ffffff;
 }
 .login_box{
 	position: absolute;
 	top: 105px;
-	right: 170px;
+	right: 120px;
 	width: 440px;
 	height: 450px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
-	background: linear-gradient(to right bottom,rgba(255,255,255, .5),rgba(255,255,255, .1));
+	background: linear-gradient(to right bottom,rgba(255,255,255, .7),rgba(255,255,255, .4));
 	backdrop-filter: blur(8px);
 	box-shadow: 5px 5px 10px rgba(0,0,0, .2);
 }

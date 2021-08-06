@@ -1,25 +1,31 @@
-body{
+body {
 	width: 1903px;
 }
-.top{
+
+.top {
 	width: 1903px;
 	background-color: #4386a2;
 }
-.top_logo{
+
+.top_logo {
 	background-color: #4188b4;
 }
-.top_logo a img{
+
+.top_logo a img {
 	margin-left: 20px;
 }
-.time{
+
+.time {
 	float: left;
 	width: 600px;
 	height: 120px;
 }
-#now_time{
+
+#now_time {
 	position: relative;
 }
-#now_time p{
+
+#now_time p {
 	position: absolute;
 	top: 80px;
 	left: 20px;
@@ -27,29 +33,34 @@ body{
 	font-weight: 500px;
 	color: #ffffff;
 }
-.user{
+
+.user {
 	position: relative;
 	float: right;
 	width: 260px;
 	height: 120px;
 }
-.profile{
+
+.profile {
 	margin-top: 5px;
 }
-.profile img{
+
+.profile img {
 	width: 50px;
 	height: 50px;
 	margin: 30px 0;
 	border-radius: 50%;
 	border: 2px solid white;
 }
-.profile i{
+
+.profile i {
 	margin-left: 10px;
 	color: white;
 	font-size: 20px;
 	vertical-align: middle;
 }
-.profile span{
+
+.profile span {
 	position: absolute;
 	top: 30px;
 	display: inline-block;
@@ -59,14 +70,16 @@ body{
 	color: white;
 	font-size: 20px;
 }
-#user_state{
+
+#user_state {
 	position: absolute;
 	top: 63px;
 	line-height: 14px;
 	font-size: 14px;
 	color: white;
 }
-#user_state::before{
+
+#user_state::before {
 	content: '';
 	display: inline-block;
 	vertical-align: middle;
@@ -76,7 +89,8 @@ body{
 	border-radius: 50%;
 	background-color: #00ff00;
 }
-#user_vip{
+
+#user_vip {
 	position: absolute;
 	top: 60px;
 	left: 105px;
@@ -90,10 +104,12 @@ body{
 	font-size: 8px;
 	color: white;
 }
-#user_vip a{
+
+#user_vip a {
 	color: white;
 }
-.set::after{
+
+.set::after {
 	content: '\e810';
 	position: absolute;
 	bottom: 5px;
@@ -105,33 +121,38 @@ body{
 	cursor: pointer;
 	transition: all .8s;
 }
-.set:hover::after{
+
+.set:hover::after {
 	color: #595959;
 	transform: rotate(180deg);
 }
-.user_set{
+
+.user_set {
 	position: absolute;
+	top: 120px;
 	right: 1px;
 	display: none;
 	width: 160px;
-	margin-top: 5px;
 	border: 1px solid #e7e7e7;
 	border-radius: 0 0 10px 10px;
 	border-top: none;
 	box-shadow: 2px 2px 5px #dddddd;
 	background-color: white;
 }
-.user_set li{
+
+.user_set li {
 	height: 50px;
 	margin: 0 30px;
 	border-bottom: 1px solid #ccc;
 	text-align: center;
 	line-height: 50px;
 }
-.user_set li:last-of-type{
+
+.user_set li:last-of-type {
 	border: none;
 }
-.nav{
+
+.nav {
 	float: left;
 	height: 1080px;
 	width: 300px;
@@ -139,7 +160,8 @@ body{
 	color: white;
 	transition: width .5s;
 }
-.nav_title{
+
+.nav_title {
 	height: 50px;
 	padding-left: 20px;
 	line-height: 50px;
@@ -147,23 +169,47 @@ body{
 	background-color: #002136;
 	color: #787878;
 }
-details[open]{
+
+details[open] {
 	background-color: #002d47;
 }
-details ul li{
+.nav ul{
+	display: none;
+}
+.nav ul li {
 	height: 40px;
 	line-height: 40px;
 	padding-left: 50px;
 	font-size: 14px;
 	background-color: #003f61;
 }
-details ul li a{
+
+.nav ul li a {
+	display: inline-block;
+	width: 100%;
+	height: 40px;
 	color: white;
 }
-details ul li a:hover{
+
+.nav ul li a:hover {
 	color: #62C0EB;
 }
-.nav summary{
+
+details::-webkit-details-marker {
+	display: none;
+}
+
+summary {
+	user-select: none;
+	outline: 0;
+}
+
+summary[focus] {
+	outline: 1px dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+}
+
+.nav summary {
 	position: relative;
 	height: 50px;
 	padding-left: 20px;
@@ -173,7 +219,11 @@ details ul li a:hover{
 	list-style: none;
 	cursor: pointer;
 }
-.nav summary::after{
+.change::after{
+	transform: rotate(45deg)!important;
+	transition: transform .5s;
+}
+.summary::after {
 	content: '';
 	position: absolute;
 	top: 18px;
@@ -186,40 +236,48 @@ details ul li a:hover{
 	transform: rotate(-45deg);
 	transition: transform .5s;
 }
-.nav summary:hover{
+
+.nav summary:hover {
 	background-color: #002b44;
 }
-iframe{
+
+iframe {
 	float: left;
 	width: 1603px;
 	height: 900px;
 	border: none;
 }
+
 @media screen and (min-width: 2115px) {
-	body{
+	body {
 		width: 2114px;
 	}
-	iframe{
+
+	iframe {
 		width: calc(2114px - 300px);
 	}
 }
-.footer{
+
+.footer {
 	float: left;
 	height: 143px;
 	width: 1603px;
 	text-align: center;
 	line-height: 143px;
 }
+
 @media screen and (max-width:1080px) {
-	body{
+	body {
 		width: 1603px;
 	}
-	.nav{
+
+	.nav {
 		margin-left: -300px;
 		transition: width .2s;
 		overflow: hidden;
 	}
-	.top{
+
+	.top {
 		width: 1603px;
 	}
 }
