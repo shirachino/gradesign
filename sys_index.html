@@ -25,7 +25,7 @@
 			}
 		</style>
 	</head>
-	<body style="background-color: #f3f3eb;">
+	<body style="background-color: #fffef6;">
 		<!-- 今日销售 -->
 		<div class="today_sale box">
 			<h2>今日销售概况</h2>
@@ -61,14 +61,9 @@
 		<div class="othermod box">
 			<h2>其他功能</h2>
 			<!-- 备忘录 -->
-			<p class="sctt">备忘录</p>
-			<div id="mem" data-mindex="1">
-				静态数据测试静态数据测试静态数据测试静态数据测试静态数据测试
-				静态数据测试静态数据测试静态数据测试静态数据测试静态数据测试
-				静态数据测试静态数据测试静态数据测试静态数据测试静态数据测试
-				静态数据测试静态数据测试静态数据测试静态数据测试静态数据测试
-				静态数据测试静态数据测试静态数据测试静态数据测试静态数据测试
-				静态数据测试静态数据测试静态数据测试静态数据测试静态数据测试
+			<p class="sctt">备忘录&nbsp;&nbsp;<span id="newmem">新建&nbsp;</span></p>
+			<div class="memarea">
+				
 			</div>
 			<!-- 备忘录/ -->
 		</div>
@@ -146,7 +141,24 @@
 				</div>
 			</div>
 		</div>
-		<!-- 便捷销售模态框? -->
+		<!-- 便捷销售模态框/ -->
+		
+		<!-- 备忘录模态框 -->
+		<div class="mem mydefmodal">
+			<button type="button" class="close"><span>&times;</span></button>
+			<div class="mydefmodal_main">
+				<div class="mydefmodal_header">
+					<h4 class="mydefmodal_title">新建备忘录</h4>
+				</div>
+				<div class="mydefmodal_body">
+					<textarea placeholder="请在此输入您将要做的事情..."></textarea>
+					<p>完成时间</p>
+					<input type="date" class="form_control" v-model="" placeholder="完成时间">
+					<button type="button" class="btn mydefbtn_primary" id="memconfirm">确认</button>
+				</div>
+			</div>
+		</div>
+		<!-- 备忘录模态框/ -->
 		<div class="mask"></div>
 		<script type="text/javascript">
 

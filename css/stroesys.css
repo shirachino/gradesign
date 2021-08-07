@@ -4,11 +4,11 @@ body {
 
 .top {
 	width: 1903px;
-	background-color: #4386a2;
+	background:linear-gradient(to top left, rgba(67, 134, 162, .5), rgba(67, 134, 162, .9));;
 }
 
 .top_logo {
-	background-color: #4188b4;
+	background-color: #0d3f68;
 }
 
 .top_logo a img {
@@ -29,6 +29,7 @@ body {
 	position: absolute;
 	top: 80px;
 	left: 20px;
+	font-family:FZYaoti;
 	font-size: 18px;
 	font-weight: 500px;
 	color: #ffffff;
@@ -123,7 +124,7 @@ body {
 }
 
 .set:hover::after {
-	color: #595959;
+	color: #475387;
 	transform: rotate(180deg);
 }
 
@@ -220,6 +221,7 @@ summary[focus] {
 	cursor: pointer;
 }
 .change::after{
+
 	transform: rotate(45deg)!important;
 	transition: transform .5s;
 }
