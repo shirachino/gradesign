@@ -1,3 +1,4 @@
+Vue.config.devtools = true;
 $(function(){
 	// 模态框淡入淡出
 	$('.addbtn').on('click',function() {

@@ -131,7 +131,7 @@ input[type^=text]:focus {
 .mydefmodal_body td:first-of-type {
 	width: 120px;
 	height: 50px;
-	padding-right: 40px;
+	padding-right: 4px;
 	text-align: right;
 	line-height: 50px;
 	font-size: 18px;
@@ -452,4 +452,54 @@ input[type^=text]:focus {
 
 .sold {
 	height: 380px;
+}
+
+.sales_rank{
+	position: relative;
+	width: 100%;
+	height: 906px;
+}
+.sales_rank h3{
+	position: absolute;
+	color: #974705;
+	
+}
+.sales_rank h3 span{
+	vertical-align:bottom;
+	font-family: Linearicons-Free;
+	font-weight: 600;
+}
+.sales_rank h3:nth-of-type(1){
+	top: -15px;
+	left: 42px;
+}
+.sales_rank h3:nth-of-type(2){
+	top: -15px;
+	left: 804px;
+}
+.sales_rank h3:nth-of-type(3){
+	top: 412px;
+	left: 38px;
+}
+#day_sales_rank{
+	float: left;
+	width: 48%;
+	height: 400px;
+	margin: 0 50px 0 0;
+	border-right: 1px solid #ccc;
+	/* background-color: rgb(240, 150, 165); */
+}
+#week_sales_rank{
+	float: left;
+	width: 48%;
+	height: 400px;
+	/* background-color: rgb(240, 150, 165); */
+}
+#month_sales_rank{
+	float: left;
+	width: 95%;
+	height: 400px;
+	margin: 20px 50px 0 0;
+	border-top: 1px solid #ccc;
+	/* background-color: rgb(121, 99, 245); */
 }

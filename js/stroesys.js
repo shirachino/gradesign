@@ -1,11 +1,29 @@
-$(function(){
+import '../plug/vue/vue.min.js';
+import '../plug/jquery/jquery-3.6.0.min.js';
+Vue.config.devtools = true;
+
+$(function () {
 	// 用户设置下拉菜单
 	$(".set").hover(function () {
 		$(".user_set").stop().slideToggle(200);
 	})
 	// 导航栏缓动
-	$("summary").on("click",function(){
+	$("summary").on("click", function () {
 		$(this).parent().next().stop().slideToggle(300);
 		$(this).toggleClass("change");
 	})
+})
+
+var sysVm = new Vue({
+	el: '#user-box',
+	data() {
+		return {
+			sysUserName: ''
+		}
+	},
+	created() {
+		this.sysUserName = window.localStorage.getItem('tname')
+		window.localStorage.removeItem('tname')
+		window.localStorage.removeItem('tpsw')
+	},
 })
