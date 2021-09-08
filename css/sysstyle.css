@@ -1,5 +1,8 @@
 /* 通用样式 */
 html::-webkit-scrollbar { display: none; }
+body{
+	background-color: #f3f3eb;
+}
 .floatleft {
 	float: left;
 }
@@ -502,4 +505,11 @@ input[type^=text]:focus {
 	margin: 20px 50px 0 0;
 	border-top: 1px solid #ccc;
 	/* background-color: rgb(121, 99, 245); */
+}
+
+/* 顾客流量 */
+.cus-chart{
+	width: 700px;
+	height: 400px;
+	background-color: none;
 }

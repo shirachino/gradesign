@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="聊城大学 计算机学院 电子商务">
+	<meta name="keywords" content="系统,商品,毕设,商店管理" />
+	<title>店铺管家系统首页</title>
+	<link rel="stylesheet" type="text/css" href="../css/base.css" />
+	<link rel="stylesheet" type="text/css" href="../css/sysstyle.css" />
+	<script src="../plug/jquery/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../plug/vue/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../plug/vue/vue-resource.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/sys_index.js" type="text/javascript" charset="utf-8"></script>
+	<style type="text/css">
+		@font-face {
+			font-family: 'Linearicons-Free';
+			src: url('../fonts/Linearicons-Free.eot?pbf4y');
+			src: url('../fonts/Linearicons-Free.eot?pbf4y#iefix') format('embedded-opentype'),
+				url('../fonts/Linearicons-Free.ttf?pbf4y') format('truetype'),
+				url('../fonts/Linearicons-Free.woff?pbf4y') format('woff'),
+				url('../fonts/Linearicons-Free.svg?pbf4y#Linearicons-Free') format('svg');
+			font-weight: normal;
+			font-style: normal;
+			font-display: block;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- 今日销售 -->
+	<div class="today_sale box">
+		<h2>今日销售概况</h2>
+		<div class="customer tod_tag">
+			<h6>顾客数</h6>
+			<!-- 被购买次数=顾客数，后台动态接收 -->
+			<i>10000</i><span>人</span>
+		</div>
+		<div class="sales tod_tag">
+			<h6>销售额</h6>
+			<!-- 净销售，后台动态接收 -->
+			<i>20000.00</i><span>元</span>
+		</div>
+		<div class="saletop tod_tag">
+			<h6>销量最高</h6>
+			<!-- 被购买次数=顾客数，后台动态接收 -->
+			<i>统一绿茶</i>
+		</div>
+	</div>
+	<!-- 今日销售/ -->
+
+	<!-- 快速导航 -->
+	<div class="fastmod box">
+		<h2>快捷入口</h2>
+		<p class="sctt">常用功能</p>
+		<button class="btn mod_one">快速入库 </button>
+		<button class="btn mod_two">快捷查询 </button>
+		<button class="btn mod_thr">便捷销售 </button>
+	</div>
+	<!-- 快速导航/ -->
+
+	<!-- 拓展功能 -->
+	<div class="othermod box">
+		<h2>其他功能</h2>
+		<!-- 备忘录 -->
+		<p class="sctt">备忘录&nbsp;&nbsp;<span id="newmem">新建&nbsp;</span></p>
+		<div class="memarea">
+
+		</div>
+		<!-- 备忘录/ -->
+	</div>
+	<!-- 拓展功能/ -->
+
+	<!-- 快速入库模态框 -->
+	<div class="fastadd mydefmodal">
+		<button type="button" class="close"><span>&times;</span></button>
+		<div class="mydefmodal_main">
+			<div class="mydefmodal_header">
+				<h4 class="mydefmodal_title">快速入库</h4>
+			</div>
+			<div class="mydefmodal_body">
+				<table>
+					<tr>
+						<td>商品名称</td>
+						<td><input class="form_control" v-model="" placeholder="名称"> </td>
+					</tr>
+					<tr>
+						<td>商品类型</td>
+						<td><input class="form_control" v-model="" placeholder="类型"> </td>
+					</tr>
+					<tr>
+						<td>商品编号</td>
+						<td><input class="form_control" v-model="" placeholder="编号"> </td>
+					</tr>
+					<tr>
+						<td>单价</td>
+						<td><input class="form_control" v-model="" placeholder="单价"> </td>
+					</tr>
+					<tr>
+						<td>上架日期</td>
+						<td><input type="date" class="form_control" v-model="" placeholder="上架日期"> </td>
+					</tr>
+					<tr>
+						<td>过期时间</td>
+						<td><input type="date" class="form_control" v-model="" placeholder="过期时间"> </td>
+					</tr>
+				</table>
+				<div class="mydefmodal_footer">
+					<button type="button" class="btn mydefbtn_default">取消</button>
+					<button type="button" class="btn mydefbtn_primary">入库</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 快速入库模态框/ -->
+
+	<!-- 快速查询模态框 -->
+	<div class="fastsearch mydefmodal">
+		<button type="button" class="close"><span>&times;</span></button>
+		<div class="mydefmodal_main">
+			<div class="mydefmodal_header">
+				<h4 class="mydefmodal_title">快捷查询</h4>
+			</div>
+			<div class="mydefmodal_body">
+				<input type="text" class="sc_input" v-model="" placeholder="请输入商品名称、编号查询">
+				<button type="button" class="btn mydefbtn_primary">查询</button>
+			</div>
+		</div>
+	</div>
+	<!-- 快速查询模态框/ -->
+
+	<!-- 便捷销售模态框 -->
+	<div class="fastsold mydefmodal">
+		<button type="button" class="close"><span>&times;</span></button>
+		<div class="mydefmodal_main">
+			<div class="mydefmodal_header">
+				<h4 class="mydefmodal_title">便捷销售</h4>
+			</div>
+			<div class="mydefmodal_body">
+				<input type="text" class="sc_input" v-model="" placeholder="请输入商品编号">
+				<input type="text" class="sc_input" v-model="" placeholder="请输入销售数量">
+				<button type="button" class="btn mydefbtn_primary">销售</button>
+			</div>
+		</div>
+	</div>
+	<!-- 便捷销售模态框/ -->
+
+	<!-- 备忘录模态框 -->
+	<div class="mem mydefmodal">
+		<button type="button" class="close"><span>&times;</span></button>
+		<div class="mydefmodal_main">
+			<div class="mydefmodal_header">
+				<h4 class="mydefmodal_title">新建备忘录</h4>
+			</div>
+			<div class="mydefmodal_body">
+				<textarea placeholder="请在此输入您将要做的事情..."></textarea>
+				<p>完成时间</p>
+				<input type="date" class="form_control" v-model="" placeholder="完成时间">
+				<button type="button" class="btn mydefbtn_primary" id="memconfirm">确认</button>
+			</div>
+		</div>
+	</div>
+	<!-- 备忘录模态框/ -->
+	<div class="mask"></div>
+	<script type="text/javascript">
+
+	</script>
+</body>
+
+</html>
