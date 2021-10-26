@@ -160,6 +160,7 @@ body {
 	background-color: #002136;
 	color: white;
 	transition: width .5s;
+	transition: margin-left .3s;
 }
 
 .nav_title {
@@ -220,6 +221,23 @@ summary[focus] {
 	list-style: none;
 	cursor: pointer;
 }
+
+.nav_tog{
+	position: absolute;
+	top: 400px;
+	left: 300px;
+	width: 15px;
+	height: 30px;
+	background-color: #364ba5be;
+	border-radius: 0 50% 50% 0;
+	transition: margin-left .3s;
+}
+
+.nav_hide{
+	margin-left: -300px;
+	transition: margin-left .3s;
+}
+
 .change::after{
 
 	transform: rotate(45deg)!important;
@@ -268,18 +286,3 @@ iframe {
 	line-height: 143px;
 }
 
-@media screen and (max-width:1080px) {
-	body {
-		width: 1603px;
-	}
-
-	.nav {
-		margin-left: -300px;
-		transition: width .2s;
-		overflow: hidden;
-	}
-
-	.top {
-		width: 1603px;
-	}
-}

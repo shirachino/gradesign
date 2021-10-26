@@ -12,6 +12,10 @@ $(function () {
 		$(this).parent().next().stop().slideToggle(300);
 		$(this).toggleClass("change");
 	})
+	$(".nav_tog").on("click", function () {
+		$(".nav").toggleClass("nav_hide");
+		$(this).toggleClass("nav_hide");
+	})
 })
 
 var sysVm = new Vue({
